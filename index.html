@@ -23,22 +23,31 @@
        
         nav {
             display: flex;
-            justify-content: space-between;
+            flex-direction: column;
             align-items: center;
-            padding: 1rem 5%;
+            padding: 0.8rem 5%;
             max-width: 1400px;
             margin: 0 auto;
         }
        
         .logo img {
-            height: 95px;
+            height: 80px;
             width: auto;
+            margin-bottom: 8px;
+        }
+        .nav-links {
+            display: flex;
+            gap: 1.2rem;
+            list-style: none;
+            flex-wrap: wrap;
+            justify-content: center;
+            font-size: 0.95rem;
         }
         .hero {
             height: 100vh;
             background: linear-gradient(rgba(0,0,0,0.65), rgba(0,0,0,0.65)), url('https://i.ibb.co/0RDnh9Jw/dji-fly-20260110-063154-44-1768041503995-photo-optimized.jpg') center/cover no-repeat;
             display: flex; align-items: center; justify-content: center; text-align: center; color: white;
-            margin-top: 85px;
+            margin-top: 140px; /* Aumentado por causa do menu empilhado */
         }
        
         section { padding: 90px 5%; max-width: 1400px; margin: 0 auto; }
@@ -74,16 +83,15 @@
         }
         nav a { color: #1A1A1A; font-weight: 500; text-decoration: none; }
 
-        /* ==================== MELHORIA PARA CELULAR ==================== */
+        /* Responsivo - Celular */
         @media (max-width: 768px) {
             .logo img { height: 68px; }
-            .hero { height: 85vh; margin-top: 68px; }
+            .hero { height: 85vh; margin-top: 125px; }
             .hero h1 { font-size: 2.5rem; }
-            .hero h2 { font-size: 1.8rem; }
-            section { padding: 60px 6%; }
+            .hero h2 { font-size: 1.9rem; }
+            section { padding: 65px 6%; }
             .section-title { font-size: 2.1rem; }
-            nav { padding: 0.7rem 5%; }
-            nav ul { gap: 0.9rem; font-size: 0.95rem; }
+            .nav-links { gap: 1rem; font-size: 0.92rem; }
         }
     </style>
 </head>
@@ -94,7 +102,7 @@
             <div class="logo">
                 <img src="https://i.ibb.co/sJdSDBTY/IMG-9056.png" alt="Noroeste Engenharia">
             </div>
-            <ul style="display:flex; gap:1.8rem; list-style:none; flex-wrap:wrap; justify-content:center;">
+            <ul class="nav-links" style="display:flex; gap:1.8rem; list-style:none; flex-wrap:wrap; justify-content:center;">
                 <li><a href="#home">Início</a></li>
                 <li><a href="#sobre">Sobre</a></li>
                 <li><a href="#portfolio">Portfólio</a></li>
