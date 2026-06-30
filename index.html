@@ -7,60 +7,55 @@
     <meta name="description" content="Mais de 400 usinas solares instaladas em Cacoal e região.">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <style>
-        :root { 
-            --primary: #2C3E50;     
-            --dark: #1A1A1A; 
+        :root {
+            --primary: #2C3E50;
+            --dark: #1A1A1A;
         }
         * { margin: 0; padding: 0; box-sizing: border-box; }
         body { font-family: 'Segoe UI', system-ui, sans-serif; line-height: 1.7; color: #333; }
-
-        header { 
-            background: #f8f9fa; 
+        header {
+            background: #f8f9fa;
             box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-            position: fixed; 
-            width: 100%; 
-            z-index: 1000; 
+            position: fixed;
+            width: 100%;
+            z-index: 1000;
         }
-        
-        nav { 
-            display: flex; 
-            justify-content: space-between; 
-            align-items: center; 
-            padding: 1rem 5%; 
-            max-width: 1400px; 
-            margin: 0 auto; 
+       
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem 5%;
+            max-width: 1400px;
+            margin: 0 auto;
         }
-        
-        .logo img { 
-            height: 95px; 
-            width: auto; 
+       
+        .logo img {
+            height: 95px;
+            width: auto;
         }
-
-        .hero { 
-            height: 100vh; 
-            background: linear-gradient(rgba(0,0,0,0.65), rgba(0,0,0,0.65)), url('https://i.ibb.co/0RDnh9Jw/dji-fly-20260110-063154-44-1768041503995-photo-optimized.jpg') center/cover no-repeat; 
-            display: flex; align-items: center; justify-content: center; text-align: center; color: white; 
-            margin-top: 85px; 
+        .hero {
+            height: 100vh;
+            background: linear-gradient(rgba(0,0,0,0.65), rgba(0,0,0,0.65)), url('https://i.ibb.co/0RDnh9Jw/dji-fly-20260110-063154-44-1768041503995-photo-optimized.jpg') center/cover no-repeat;
+            display: flex; align-items: center; justify-content: center; text-align: center; color: white;
+            margin-top: 85px;
         }
-        
+       
         section { padding: 90px 5%; max-width: 1400px; margin: 0 auto; }
         .section-title { text-align: center; font-size: 2.6rem; margin-bottom: 3rem; color: var(--dark); }
         .section-title::after { content: ''; width: 80px; height: 5px; background: var(--primary); display: block; margin: 15px auto; border-radius: 3px; }
-
-        .grid { 
-            display: grid; 
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); 
-            gap: 1.8rem; 
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 1.8rem;
         }
-
-        .instagram-media { 
-            width: 100% !important; 
-            max-width: 100% !important; 
-            margin: 0 auto; 
-            border-radius: 12px; 
+        .instagram-media {
+            width: 100% !important;
+            max-width: 100% !important;
+            margin: 0 auto;
+            border-radius: 12px;
             overflow: hidden;
         }
-
         .whatsapp-float {
             position: fixed; bottom: 25px; right: 25px;
             background: #25D366; color: white;
@@ -69,31 +64,31 @@
             font-size: 2rem; box-shadow: 0 8px 20px rgba(0,0,0,0.25);
             z-index: 9999; text-decoration: none;
         }
-
-        .btn { 
-            padding: 16px 40px; 
-            background: var(--primary); 
-            color: white; 
-            border-radius: 50px; 
-            text-decoration: none; 
-            font-weight: 600; 
+        .btn {
+            padding: 16px 40px;
+            background: var(--primary);
+            color: white;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 600;
         }
-
         nav a { color: #1A1A1A; font-weight: 500; text-decoration: none; }
 
-        /* Responsivo */
+        /* ==================== MELHORIA PARA CELULAR ==================== */
         @media (max-width: 768px) {
             .logo img { height: 72px; }
-            .hero { height: 90vh; margin-top: 70px; }
-            .hero h1 { font-size: 2.8rem; }
-            .hero h2 { font-size: 2rem; }
-            section { padding: 70px 8%; }
-            .section-title { font-size: 2.2rem; }
+            .hero { height: 85vh; margin-top: 70px; padding: 0 5%; }
+            .hero h1 { font-size: 2.6rem; }
+            .hero h2 { font-size: 1.9rem; }
+            section { padding: 60px 6%; }
+            .section-title { font-size: 2.1rem; }
+            .grid { gap: 1.4rem; }
+            nav { padding: 0.8rem 5%; flex-direction: column; gap: 10px; }
+            nav ul { gap: 1rem; justify-content: center; }
         }
     </style>
 </head>
 <body>
-
     <!-- HEADER -->
     <header>
         <nav>
@@ -110,7 +105,6 @@
             </ul>
         </nav>
     </header>
-
     <!-- HERO -->
     <section id="home" class="hero">
         <div>
@@ -120,7 +114,6 @@
             <a href="#contato" class="btn">SOLICITAR ORÇAMENTO</a>
         </div>
     </section>
-
     <!-- SOBRE -->
     <section id="sobre">
         <h2 class="section-title">Sobre a Noroeste Engenharia</h2>
@@ -136,7 +129,6 @@
             </div>
         </div>
     </section>
-
     <!-- PORTFÓLIO -->
     <section id="portfolio">
         <h2 class="section-title">Projetos Realizados</h2>
@@ -149,7 +141,6 @@
             <div><blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/p/CVP8vj6rFZ_/" data-instgrm-version="14"></blockquote></div>
         </div>
     </section>
-
     <!-- BATERIAS -->
     <section id="backup" style="background:#f8f9fa;">
         <h2 class="section-title">Sistemas com Baterias e Backup</h2>
@@ -158,13 +149,11 @@
             <div><blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/reel/DXwYhsKhlll/" data-instgrm-version="14"></blockquote></div>
         </div>
     </section>
-
     <!-- BLOG (Soro) -->
     <section id="blog" style="background:#f8f9fa;">
         <h2 class="section-title">Blog</h2>
         <div id="soro-blog"></div>
     </section>
-
     <!-- CONTATO -->
     <section id="contato" style="background: linear-gradient(135deg, var(--primary), #1A1A1A); color:white;">
         <h2 class="section-title" style="color:white;">Peça seu Orçamento</h2>
@@ -182,20 +171,16 @@
             </form>
         </div>
     </section>
-
     <footer>
         <p>© 2026 Noroeste Engenharia - Energia Solar • Cacoal, RO</p>
         <p>Instagram: <a href="https://www.instagram.com/noroeste_engenharia" target="_blank" style="color:var(--primary)">@noroeste_engenharia</a></p>
     </footer>
-
     <a href="https://wa.me/5569999058171" target="_blank" class="whatsapp-float">
         <i class="fab fa-whatsapp"></i>
     </a>
-
     <!-- Script do Soro Blog -->
     <script src="https://app.trysoro.com/api/embed/4f54f0b7-a713-49d3-9179-5cf0847b76c3" defer></script>
     <script async src="//www.instagram.com/embed.js"></script>
-
     <script>
         function enviarParaWhatsApp(e) {
             e.preventDefault();
